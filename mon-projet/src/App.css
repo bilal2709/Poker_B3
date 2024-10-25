@@ -1,0 +1,108 @@
+/* src/App.css */
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  background-image: url('./images/background.jpg'); /* Ajout de l'image de fond */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f855a;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.start-button, .evaluate-button {
+  padding: 10px 20px;
+  background-color: #3182ce;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-button:hover, .evaluate-button:hover {
+  background-color: #2b6cb0;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  background-color: #e53e3e;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.restart-button:hover {
+  background-color: #c53030;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hand-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.hand-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.shuffling .card-inner {
+  animation: shuffle 0.3s infinite;
+}
+
+@keyframes shuffle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.winner-message {
+  font-size: 1.8rem;
+  color: #f6e05e;
+  margin-top: 20px;
+}
+
+.quit-button {
+  padding: 10px 20px;
+  background-color: #e53e3e; 
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.quit-button:hover {
+  background-color: #c53030; 
+}
+
